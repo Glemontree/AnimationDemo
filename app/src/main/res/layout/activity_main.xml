@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动画加载1"
+        android:id="@android:id/button1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/button2"
+        android:layout_toRightOf="@android:id/button1"
+        android:layout_marginLeft="20dip"
+        android:text="动画加载2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/button3"
+        android:layout_toRightOf="@android:id/button2"
+        android:layout_marginLeft="20dip"
+        android:text="动画wifi1"/>
+
+    <ImageView
+        android:id="@+id/animationIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        />
+
+    <ImageView
+        android:id="@+id/animationIV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/animationIV"
+        android:src="@anim/load_animation_2"
+        android:contentDescription="@string/app_name"
+        android:layout_alignBottom="@id/animationIV"
+        android:layout_marginLeft="30dip"
+        />
+
+    <ImageView
+        android:id="@+id/animationIV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/animationIV"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="20dip"
+        />
+</RelativeLayout>
